@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Theme Toggle Icon -->
-<img id="theme-toggle-img" src="moon.png" alt="Toggle Theme" onclick="toggleBackground()">
-
-<header>
+  <header>
     <h1>My Portfolio</h1>
     <p id="typing-text">Welcome to my personal website!</p>
-</header>
+  </header>
 
-<nav>
+  <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-<section id="about">
+  <section id="about">
     <h2>About Me</h2>
-    <img src="image.webp" alt="My Photo" class="profile-pic">
-    <p>Hello! I'm a passionate developer who loves building simple and beautiful websites. I have experience with HTML, CSS, and JavaScript.</p>
-</section>
+    <img src="image.webp" alt="My Photo" class="profile-pic" />
+    <p>
+      Hello! I'm a passionate developer who loves building simple and beautiful websites. I have experience with HTML, CSS, and JavaScript.
+    </p>
+  </section>
 
-<section id="education">
+  <section id="education">
     <h2>Education</h2>
     <ul>
-        <li><strong>Associate in AI Business Convergence</strong> - Kimpo University (March 2025 - Feb 2027)</li>
+      <li>
+        <strong>Associate in AI Business Convergence</strong> - Kimpo University (March 2025 - Feb 2027)
+      </li>
     </ul>
-</section>
+  </section>
 
-<section id="projects">
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-        <li><strong>Project 1:</strong> Simple Website Design</li>
+      <li><strong>Project 1:</strong> Simple Website Design</li>
     </ul>
-</section>
+  </section>
 
-<section id="contact">
+  <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: sarismamagar452@gmail.com</p>
     <button onclick="sendEmail()">Send Email</button>
-</section>
+  </section>
 
-<footer>
+  <div class="button-container">
+    <button onclick="toggleBackground()">Toggle Background</button>
+  </div>
+
+  <footer>
     <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
