@@ -1,4 +1,4 @@
-// Typing effect
+// Typing effect for header
 function typeEffect(element, text, speed) {
     let i = 0;
     element.innerHTML = "";
@@ -16,11 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect(document.getElementById("typing-text"), "Welcome to my personal website!", 80);
 });
 
-// Send email
+// Send email button
 function sendEmail() {
     window.location.href = "mailto:sarismamagar452@gmail.com?subject=Contact from Portfolio&body=Hello Sarishma!";
 }
 
+// Theme toggle
 let isDark = false;
 
 function toggleBackground() {
@@ -38,7 +39,7 @@ function toggleBackground() {
         header.style.backgroundColor = "#1f1f1f";
         nav.style.backgroundColor = "#2c2c2c";
         footer.style.backgroundColor = "#1f1f1f";
-        toggleImg.src = "sun.png"; // show sun in dark mode
+        toggleImg.src = "sun.png";
 
         sections.forEach(sec => {
             sec.style.backgroundColor = "#1e1e1e";
@@ -56,7 +57,7 @@ function toggleBackground() {
         header.style.backgroundColor = "#333";
         nav.style.backgroundColor = "#444";
         footer.style.backgroundColor = "#333";
-        toggleImg.src = "moon.png"; // show moon in light mode
+        toggleImg.src = "moon.png";
 
         sections.forEach(sec => {
             sec.style.backgroundColor = "#fff";
