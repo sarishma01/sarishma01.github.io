@@ -8,18 +8,39 @@ body {
   }
   
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 250px;
+  position: relative;
+}
 
-  }
-  
-  .header-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header-bar {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header-content p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
   
   nav {
     background-color: #444;
