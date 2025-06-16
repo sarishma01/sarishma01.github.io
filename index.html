@@ -58,11 +58,25 @@
         }
     </style>
 </head>
+
+<div style="text-align:center; margin: 20px;">
+    <button onclick="sendEmail()">Send Email</button>
+    <button onclick="toggleBackground()">Toggle Background</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        typeEffect(document.getElementById("typing-text"), "Welcome to my personal website!", 100);
+    });
+</script>
+
+<script src="script.js"></script>
+
 <body>
 
 <header>
     <h1>My Portfolio</h1>
-    <p>Welcome to my personal website!</p>
+    <p id="typing-text">Welcome to my personal website!</p>
 </header>
 
 <nav>
