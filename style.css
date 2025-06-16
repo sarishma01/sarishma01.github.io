@@ -19,7 +19,8 @@ body {
     justify-content: flex-end;
   }
   
-  #theme-toggle {
+  /* Default (light mode) button */
+#theme-toggle {
     padding: 10px 15px;
     margin: 10px;
     border-radius: 6px;
@@ -27,7 +28,15 @@ body {
     cursor: pointer;
     font-weight: bold;
     background-color: #e0e0e0;
+    color: #000;
     transition: all 0.3s ease;
+  }
+  
+  /* Dark mode style for the button */
+  .dark-mode #theme-toggle {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #666;
   }
   
   .header-content {
