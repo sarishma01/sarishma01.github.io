@@ -89,3 +89,14 @@ body.dark-mode #theme-toggle {
     background-color: rgba(0, 0, 0, 0.7);
     color: #f5f5f5;
 }
+
+#theme-toggle-img {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 999;
+    transition: filter 0.3s ease;
+}

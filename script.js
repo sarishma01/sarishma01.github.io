@@ -30,16 +30,15 @@ function toggleBackground() {
     const nav = document.querySelector("nav");
     const footer = document.querySelector("footer");
     const buttons = document.querySelectorAll("button");
-    const toggleIcon = document.getElementById("theme-toggle");
+    const toggleImg = document.getElementById("theme-toggle-img");
 
     if (!isDark) {
-        body.classList.add("dark-mode");
         body.style.backgroundColor = "#121212";
         body.style.color = "#f0f0f0";
         header.style.backgroundColor = "#1f1f1f";
         nav.style.backgroundColor = "#2c2c2c";
         footer.style.backgroundColor = "#1f1f1f";
-        toggleIcon.textContent = "☀️";
+        toggleImg.src = "sun.png"; // show sun in dark mode
 
         sections.forEach(sec => {
             sec.style.backgroundColor = "#1e1e1e";
@@ -52,13 +51,12 @@ function toggleBackground() {
             btn.style.border = "1px solid #666";
         });
     } else {
-        body.classList.remove("dark-mode");
         body.style.backgroundColor = "#f5f5f5";
         body.style.color = "#000";
         header.style.backgroundColor = "#333";
         nav.style.backgroundColor = "#444";
         footer.style.backgroundColor = "#333";
-        toggleIcon.textContent = "🌙";
+        toggleImg.src = "moon.png"; // show moon in light mode
 
         sections.forEach(sec => {
             sec.style.backgroundColor = "#fff";
